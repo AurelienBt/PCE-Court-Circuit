@@ -1,8 +1,8 @@
 <?php
 
 // Accès base de données
-const BD_HOST = 'mysql:host=localhost;dbname=web4shop;charset=utf8';
-const BD_DBNAME = 'web4shop';
+const BD_HOST = 'mysql:host=localhost;dbname=courtCircuit;charset=utf8';
+const BD_DBNAME = 'courtCircuit';
 const BD_USER = 'root';
 const BD_PWD = '';
 
