@@ -2,19 +2,31 @@
 
 switch ($categorie) {
     case 1:
+        $titre = "Nos légumes";
+        $action = 'legume';
+        break;
+    case 2:
+        $titre = "Nos fruits";
+        $action = 'fruit';
+        break;
+    case 3:
+        $titre = "Nos fromages";
+        $action = 'fromage';
+        break;
+    case 4:
+        $titre = "Nos charcuteries";
+        $action = 'charcuterie';
+        break;
+    case 5:
+        $titre = "Notre épicerie";
+        $action = 'epicerie';
+        break;
+    case 6:
         $titre = "Nos boissons";
         $action = 'boisson';
         break;
-    case 2:
-        $titre = "Nos biscuits";
-        $action = 'biscuit';
-        break;
-    case 3:
-        $titre = "Nos fruits secs";
-        $action = 'fruitSec';
-        break;
     default:
-        $titre = "Nottre offre";
+        $titre = "Notre offre";
         break;
 }
 ?>

@@ -41,31 +41,61 @@ class Routeur
     {
         try {
         if (isset($_GET['action'])) {
-            //Page des boissons
-            if ($_GET['action'] == 'boissons') {
+            //Page des légumes
+            if ($_GET['action'] == 'legumes') {
                 $this->c_produit->produits(1);
+            } else if ($_GET['action'] == 'legume') {
+                $idLegume = intval($this->getParametre($_GET, 'id'));
+                if ($idLegume != 0) {
+                    $this->c_produit->produit(1, $idLegume);
+                } else throw new Exception("Identifiant de légume non valide");
+            }
+            //Page des fruits
+            else if ($_GET['action'] == 'fruits') {
+                $this->c_produit->produits(2);
+            } else if ($_GET['action'] == 'fruit') {
+                $idFruit = intval($this->getParametre($_GET, 'id'));
+                if ($idFruit != 0) {
+                    $this->c_produit->produit(2, $idFruit);
+                } else throw new Exception("Identifiant de fruit non valide");
+            }
+            //Page des fromages
+            else if ($_GET['action'] == 'fromages') {
+                $this->c_produit->produits(3);
+            } else if ($_GET['action'] == 'fromage') {
+                $idFromage = intval($this->getParametre($_GET, 'id'));
+                if ($idFromage != 0) {
+                    $this->c_produit->produit(3, $idFromage);
+                } else throw new Exception("Identifiant de fromage non valide");
+            }
+
+            //Page des charcuteries
+            else if ($_GET['action'] == 'charcuteries') {
+                $this->c_produit->produits(4);
+            } else if ($_GET['action'] == 'charcuterie') {
+                $idCharcuterie = intval($this->getParametre($_GET, 'id'));
+                if ($idCharcuterie != 0) {
+                    $this->c_produit->produit(4, $idCharcuterie);
+                } else throw new Exception("Identifiant de charcuterie non valide");
+            }
+
+            //Page des épicerie
+            else if ($_GET['action'] == 'epiceries') {
+                $this->c_produit->produits(5);
+            } else if ($_GET['action'] == 'epicerie') {
+                $idEpicerie = intval($this->getParametre($_GET, 'id'));
+                if ($idEpicerie != 0) {
+                    $this->c_produit->produit(5, $idEpicerie);
+                } else throw new Exception("Identifiant de épicerie non valide");
+            }
+
+            //Page des boissons
+            else if ($_GET['action'] == 'boissons') {
+                $this->c_produit->produits(6);
             } else if ($_GET['action'] == 'boisson') {
                 $idBoisson = intval($this->getParametre($_GET, 'id'));
                 if ($idBoisson != 0) {
-                    $this->c_produit->produit(1, $idBoisson);
-                } else throw new Exception("Identifiant de boisson non valide");
-            }
-            //Page des biscuits
-            else if ($_GET['action'] == 'biscuits') {
-                $this->c_produit->produits(2);
-            } else if ($_GET['action'] == 'biscuit') {
-                $idBiscuit = intval($this->getParametre($_GET, 'id'));
-                if ($idBiscuit != 0) {
-                    $this->c_produit->produit(2, $idBiscuit);
-                } else throw new Exception("Identifiant de boisson non valide");
-            }
-            //Page des fruits secs
-            else if ($_GET['action'] == 'fruitsSecs') {
-                $this->c_produit->produits(3);
-            } else if ($_GET['action'] == 'fruitSec') {
-                $idFruitSec = intval($this->getParametre($_GET, 'id'));
-                if ($idFruitSec != 0) {
-                    $this->c_produit->produit(3, $idFruitSec);
+                    $this->c_produit->produit(6, $idBoisson);
                 } else throw new Exception("Identifiant de boisson non valide");
             }
 

@@ -9,9 +9,12 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item"><a class="nav-link active" href="index.php">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.php?action=legumes">Légumes</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.php?action=fruits">Fruits</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.php?action=fromages">Fromages</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.php?action=charcuteries">Charcuterie</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.php?action=epiceries">Épicerie</a></li>
         <li class="nav-item"><a class="nav-link active" href="index.php?action=boissons">Boissons</a></li>
-        <li class="nav-item"><a class="nav-link active" href="index.php?action=biscuits">Biscuits</a></li>
-        <li class="nav-item"><a class="nav-link active" href="index.php?action=fruitsSecs">Fruits Secs</a></li>
       </ul>
 
       <ul class="float-right navbar-nav ms-md-auto pull-right">
