@@ -7,7 +7,7 @@
 <h1>Veuillez suivre les instructions pour procéder au paiement</h1>
 
 
-<div class="card border-secondary mb-5">
+<div class="card border-primary mb-5">
     <div class="card-header">Remplisser le chèque avec les informations suivantes :</div>
     <div class="card-body">
         <div class="ligne">
@@ -39,7 +39,7 @@
 </p>
 
 
-<a href="index.php?action=factureCheque"><button type="button" class="large btn btn-secondary btn-lg"> Confirmer la commande </button></a>
+<a href="index.php?action=factureCheque"><button type="button" class="large btn btn-primary btn-lg"> Confirmer la commande </button></a>
 
 
 

@@ -43,20 +43,20 @@ class Routeur
         if (isset($_GET['action'])) {
             //Page des légumes
             if ($_GET['action'] == 'legumes') {
-                $this->c_produit->produits(1);
+                $this->c_produit->produits(2);
             } else if ($_GET['action'] == 'legume') {
                 $idLegume = intval($this->getParametre($_GET, 'id'));
                 if ($idLegume != 0) {
-                    $this->c_produit->produit(1, $idLegume);
+                    $this->c_produit->produit(2, $idLegume);
                 } else throw new Exception("Identifiant de légume non valide");
             }
             //Page des fruits
             else if ($_GET['action'] == 'fruits') {
-                $this->c_produit->produits(2);
+                $this->c_produit->produits(1);
             } else if ($_GET['action'] == 'fruit') {
                 $idFruit = intval($this->getParametre($_GET, 'id'));
                 if ($idFruit != 0) {
-                    $this->c_produit->produit(2, $idFruit);
+                    $this->c_produit->produit(1, $idFruit);
                 } else throw new Exception("Identifiant de fruit non valide");
             }
             //Page des fromages

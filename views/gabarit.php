@@ -9,7 +9,7 @@
     <title><?= $titre ?></title>
 </head>
 
-<body>
+<body style="background-color: #FEFAE0;">
     <?php require_once(PATH_SHARED_VIEWS . 'navbar.php'); ?>
 
     <div class="page">

@@ -1,7 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #BC6C25;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.php">ISIWEB4SHOP</a>
+      <a href="index.php"><img src="assets/otherimages/Logo.png" style="width: 100px; margin-right: 10px;" alt="Court Circuit" /></a>
+      <a class="navbar-brand" href="index.php">Court Circuit</a>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -9,6 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item"><a class="nav-link active" href="index.php">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.php"> | </a></li>
         <li class="nav-item"><a class="nav-link active" href="index.php?action=legumes">Légumes</a></li>
         <li class="nav-item"><a class="nav-link active" href="index.php?action=fruits">Fruits</a></li>
         <li class="nav-item"><a class="nav-link active" href="index.php?action=fromages">Fromages</a></li>

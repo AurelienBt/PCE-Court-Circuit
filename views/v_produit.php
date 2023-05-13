@@ -20,8 +20,8 @@
                 <form method='POST' action=\"index.php?action=ajouter&id=" . $produit['id'] . "\">
                     <div class=\"input-group mb-3\">
                         <label for=\"Nombre\"></label>
-                        <input class=\"border-secondary form-control\" type=\"number\" min=\"1\" max=\"" . $produit['quantity'] . "\" id='Nombre' name='Nombre' value=\"1\">
-                        <input class=\"btn btn-secondary\" type=\"submit\" name='Acheter' value=\"Acheter\">
+                        <input class=\"border-primary form-control\" type=\"number\" min=\"1\" max=\"" . $produit['quantity'] . "\" id='Nombre' name='Nombre' value=\"1\">
+                        <input class=\"btn btn-primary\" type=\"submit\" name='Acheter' value=\"Acheter\">
                     </div>
                 </form>
             </div>";
@@ -50,7 +50,7 @@
             echo
             "<div class=\"Commentaire\">
             <div><img class=\"ImageCommentaire\" src=\"" . IMAGE . $d['photo_user'] . "\" alt=\"image de l'utilisateur : " . $d['photo_user'] . "\"></div>
-            <div class=\"card text-white bg-gold mb-3 w-100\">
+            <div class=\"card text-white bg-success mb-3 w-100\">
                 <div class=\"card-header\"><h2>" . $d['name_user'] . "</h2></div>
                 <div class=\"card-body\">
                     <h4 class=\"card-title\"> " . $etoile . "</h4>

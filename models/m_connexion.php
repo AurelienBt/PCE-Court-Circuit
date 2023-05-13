@@ -19,14 +19,14 @@ class Connexion extends Model{
         try{
             if($id_user!=''){
                 $_SESSION['id'] = $id_user['customer_id'];
-                return "<div class = \"alert alert-success\" role = \" alert\"> Connection effectuée </div>";
+                return "<div class = \"alert alert-success\" role = \" alert\"> Connexion effectuée </div>";
             }
             else{
                 $id_user = $this->executerRequete($sql_admin, array($_POST['Username'], $_POST['Password']))->fetch();
                 if($id_user!=''){
                     $_SESSION['id'] = $id_user['id'];
                     $_SESSION['admin'] = 1;
-                    return "<div class = \"alert alert-success\" role = \" alert\"> Connection admin effectuée </div>";
+                    return "<div class = \"alert alert-success\" role = \" alert\"> Connexion admin effectuée </div>";
                 }
                 return "<div class = \"alert alert-warning\" role = \" alert\"> Mot de passe ou login incorrect </div>";
             }

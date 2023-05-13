@@ -1,11 +1,11 @@
 <?php
 
 switch ($categorie) {
-    case 1:
+    case 2:
         $titre = "Nos légumes";
         $action = 'legume';
         break;
-    case 2:
+    case 1:
         $titre = "Nos fruits";
         $action = 'fruit';
         break;
@@ -58,7 +58,7 @@ foreach ($produits as $d) {
 
             <div class=\"ligne\">
                 <p class= \"mr-3 d-none d-none d-lg-block\">" .  $d['description'] . "</p>
-                <a class=\" pull-righ\" href=\"index.php?action=" . $action . "&id=" . $d['id'] . "\"><button type=\"button\" class=\"btn btn-secondary\">Acheter</button></a>
+                <a class=\" pull-righ\" href=\"index.php?action=" . $action . "&id=" . $d['id'] . "\"><button type=\"button\" class=\"btn btn-primary\">Acheter</button></a>
             </div>
             <p class=\"mr-3\"><b>Notre prix : " . $d['price'] . "€</b></p>
                 

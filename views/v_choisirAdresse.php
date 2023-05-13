@@ -11,25 +11,25 @@
 
             <h5>Adresse</h5>
             <div class="form-inline ligne_form">
-                <input class="form-control border-secondary" type="text" placeholder="Adresse" id="Rue" name="Rue" required>
-                <input class="form-control border-secondary" type="text" placeholder="Complément d'adresse" id="C_Rue" name="C_Rue" required>
+                <input class="form-control border-primary" type="text" placeholder="Adresse" id="Rue" name="Rue" required>
+                <input class="form-control border-primary" type="text" placeholder="Complément d'adresse" id="C_Rue" name="C_Rue" required>
             </div>
             <div class="form-inline ligne_form">
-                <input class="form-control border-secondary" type="text" placeholder="Code postal" id="Postal" name="Postal" required>
-                <input class="form-control border-secondary" type="text" placeholder="Ville" id="Ville" name="Ville" required>
+                <input class="form-control border-primary" type="text" placeholder="Code postal" id="Postal" name="Postal" required>
+                <input class="form-control border-primary" type="text" placeholder="Ville" id="Ville" name="Ville" required>
             </div>
 
             <h5>Contact</h5>
             <div class="form-inline ligne_form">
-                <input class="form-control border-secondary" type="text" placeholder="Nom" class="form-control" id="Nom" name="Nom" required>
-                <input class="form-control border-secondary" type="text" placeholder="Prénom" class="form-control" id="Prenom" name="Prenom" required>
+                <input class="form-control border-primary" type="text" placeholder="Nom" class="form-control" id="Nom" name="Nom" required>
+                <input class="form-control border-primary" type="text" placeholder="Prénom" class="form-control" id="Prenom" name="Prenom" required>
             </div>
             <div class="form-inline ligne_form">
-                <input class="form-control border-secondary" type="text" placeholder="Mail" id="Mail" name="Mail" required>
-                <input class="form-control border-secondary" type="text" placeholder="Téléphone" id="Telephone" name="Telephone" required>
+                <input class="form-control border-primary" type="text" placeholder="Mail" id="Mail" name="Mail" required>
+                <input class="form-control border-primary" type="text" placeholder="Téléphone" id="Telephone" name="Telephone" required>
             </div>
 
-            <input class="btn btn-secondary" type="submit" name="NvAdresse" value="Choisir l'adresse que vous avez saisie">
+            <input class="btn btn-primary" type="submit" name="NvAdresse" value="Choisir l'adresse que vous avez saisie">
 
         </form>
     </div>
@@ -72,7 +72,7 @@
                         
                 </div>
 
-                <input class=\"btn btn-secondary\" type=\"submit\" name\"AncienneAdresse\" value=\"Choisir l'adresse de votre compte\">";
+                <input class=\"btn btn-primary\" type=\"submit\" name\"AncienneAdresse\" value=\"Choisir l'adresse de votre compte\">";
             }
             ?>
         </form>

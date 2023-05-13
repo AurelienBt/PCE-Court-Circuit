@@ -33,8 +33,8 @@ foreach ($panier as $d) {
 ?>
 
 <div class="BoutonsConfirmer">
-    <a class="mr-3" href="index.php?action=confirmerCommande&id= <?php echo $id; ?>"><button type="button" class="btn btn-secondary">Confimer la commande</button></a>
-    <a href="index.php?action=refuserCommande&id= <?php echo $id; ?>"><button type="button" class="btn btn-secondary">Refuser la commande</button></a>
+    <a class="mr-3" href="index.php?action=confirmerCommande&id= <?php echo $id; ?>"><button type="button" class="btn btn-primary">Confimer la commande</button></a>
+    <a href="index.php?action=refuserCommande&id= <?php echo $id; ?>"><button type="button" class="btn btn-primary">Refuser la commande</button></a>
 </div>
 
 <?php $contenu = ob_get_clean(); ?>

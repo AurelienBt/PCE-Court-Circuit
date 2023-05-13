@@ -13,8 +13,8 @@
 </div>
 <div class="col-12 card p-3">
     <div class="ligne space">
-        <a href="index.php?action=paiementPaypal"><button type="button" class="btn btn-secondary btn-lg"> Paypal </button></a>
-        <a href="index.php?action=paiementCheque"><button type="button" class="btn btn-secondary btn-lg"> Chèque </button></a>
+        <a href="index.php?action=paiementPaypal"><button type="button" class="btn btn-primary btn-lg"> Paypal </button></a>
+        <a href="index.php?action=paiementCheque"><button type="button" class="btn btn-primary btn-lg"> Chèque </button></a>
     </div>
 </div>
 

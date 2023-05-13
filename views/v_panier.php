@@ -8,16 +8,24 @@
 <?php
 foreach ($produits as $d) {
     switch ($d['cat_id']) {
-        case 1:
-            $action = 'boisson';
-            break;
         case 2:
-            $action = 'biscuit';
+            $action = 'legume';
+            break;
+        case 1:
+            $action = 'fruit';
             break;
         case 3:
-            $action = 'fruitSec';
+            $action = 'fromage';
             break;
-        default:
+        case 4:
+            $action = 'charcuterie';
+            break;
+        case 5:
+            $action = 'epicerie';
+            break;
+        case 6:
+            $action = 'boisson';
+            break;
             break;
     }
 
@@ -34,14 +42,14 @@ foreach ($produits as $d) {
             <form method=\"Post\" action=\"index.php?action=changer&id=" . $d['id'] . "\">
                 <div class=\"input-group mb-3\">
                     <label for='Quantite'> Quantité : </label>
-                    <input class=\"form-control border-secondary\" type=\"number\" name=\"Quantite\" max=\"" . $d['quantityMAX'] . "\" id=\"Quantite\" value=\"" . $d['quantity'] . "\">
-                    <input class=\"btn btn-secondary\" type=\"submit\" name=\"Actualiser\" value=\"Actualiser quantité\">
+                    <input class=\"form-control border-primary\" type=\"number\" name=\"Quantite\" max=\"" . $d['quantityMAX'] . "\" id=\"Quantite\" value=\"" . $d['quantity'] . "\">
+                    <input class=\"btn btn-primary\" type=\"submit\" name=\"Actualiser\" value=\"Actualiser quantité\">
                 </div>
             </form>
 
             <p>Prix global : <b class=\"btn-outline-dark\">" . $d['price'] * $d['quantity'] . "€</b></p>
 
-            <a href=\"index.php?action=supprimer&id=" . $d['id'] . "\"> <button type=\"button\" class=\"btn btn-secondary\"> Supprimer </button> </a>
+            <a href=\"index.php?action=supprimer&id=" . $d['id'] . "\"> <button type=\"button\" class=\"btn btn-primary\"> Supprimer </button> </a>
         </div>
                 
     </div>";
@@ -50,10 +58,10 @@ foreach ($produits as $d) {
 
 if ($total == 0) {
     echo "<h2 class=\"mb-4\"> Vous n'avez rien dans votre panier </h2>
-        <a href=\"index.php?action=boissons\"> <button type=\"button\" class=\"btn btn-secondary btn-lg\"> Aller à la boutique </button></a>";
+        <a href=\"index.php?action=boissons\"> <button type=\"button\" class=\"btn btn-primary btn-lg\"> Aller à la boutique </button></a>";
 } else {
-    echo "<h2 class=\"mb-4\"> Le montant total de votre panier est de <b class=\"btn-outline-warning\">" . $total . " €</b> </h2>
-        <a href=\"index.php?action=choisirAdresse\"> <button type=\"button\" class=\"btn btn-secondary btn-lg\"> Aller à la caisse </button></a>";
+    echo "<h2 class=\"mb-4\"> Le montant total de votre panier est de <b class=\"btn-outline-success\">" . $total . " €</b> </h2>
+        <a href=\"index.php?action=choisirAdresse\"> <button type=\"button\" class=\"btn btn-primary btn-lg\"> Aller à la caisse </button></a>";
 }
 
 
