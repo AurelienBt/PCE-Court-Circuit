@@ -115,7 +115,7 @@ class Facture extends fpdf
     //Header (surcharge)
     function Header(){
         // Logo
-        $this->Image('assets/productimages/Web4ShopHeader.png',10,6,45);
+        $this->Image('assets/otherimages/Logo.png',10,6,30);
         // Police Arial gras 15
         $this->SetFont('Helvetica','',24);
         $this->SetTextColor(120, 194, 193);
